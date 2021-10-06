@@ -3,6 +3,7 @@
  Throughout human history, conflict between individuals has always been inevitable. When problem cannot be solved, people will duel with others.
  The way how people duel has developed with the development of technology.
  The duels were also very varied. There are simple, casual rock-paper-scissors, and also pistols that would kill someone with the flick of the trigger.
+ ![pic](http://5b0988e595225.cdn.sohucs.com/images/20171101/cb094a823ed54df78069933c97444ca4.jpeg)
 ## How future people duel?
  In the coming decades, humanity will experience a new ice age due climate change. 
  After a  globally sharp drop of polulation, The rest of humanity kept flocking to cities of limited capacity.
