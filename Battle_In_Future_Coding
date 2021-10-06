@@ -1,0 +1,69 @@
+// C++ code
+//
+int Switchstate = 0;
+
+int Temperature1 = 0;
+
+int Temperature2 = 0;
+
+void setup()
+{
+  pinMode(A5, INPUT);
+  pinMode(A0, INPUT);
+  pinMode(A1, INPUT);
+  pinMode(13, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+}
+
+void loop()
+{
+  Switchstate += digitalRead(A5);
+  Temperature1 += analogRead(A0);
+  Temperature2 += analogRead(A1);
+  digitalWrite(13, HIGH);
+  while (Switchstate == HIGH) {
+    if (Temperature1 > Temperature2) {
+      digitalWrite(3, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(4, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(5, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(6, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(7, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(3, LOW);
+      digitalWrite(4, LOW);
+      digitalWrite(5, LOW);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+    }
+    if (Temperature1 < Temperature2) {
+      digitalWrite(8, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(9, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(10, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(11, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(12, HIGH);
+      delay(100); // Wait for 100 millisecond(s)
+      digitalWrite(8, LOW);
+      digitalWrite(9, LOW);
+      digitalWrite(10, LOW);
+      digitalWrite(11, LOW);
+      digitalWrite(12, LOW);
+    }
+  }
+}
