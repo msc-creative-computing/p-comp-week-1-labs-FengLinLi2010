@@ -1,0 +1,45 @@
+int photocellVal = 0; 
+int Minlight = 400;
+int LED = 13;
+int ledstate = 0;
+int PIR = 2;
+int pirState = LOW;
+int val = 0;
+int LIGHT = 12;
+void setup() {
+  Serial.begin(9600);
+  pinMode(LED,OUTPUT);
+  pinMode(LIGHT,OUTPUT);
+  pinMode(PIR,INPUT);
+}
+
+void loop() {
+  
+  photocellVal = analogRead(A0);
+   if (photocellVal < Minlight && ledstate == 0) {
+    Serial.println("night is coming");  
+    digitalWrite(LED, HIGH); 
+    ledstate = 1;
+      val = digitalRead(PIR); 
+  if (val == HIGH) {            
+    digitalWrite(LIGHT, HIGH); 
+    if (pirState == LOW) {      
+      Serial.println("Motion detected!");      
+      pirState = HIGH;
+    }
+  } else {
+    digitalWrite(LIGHT, LOW); 
+    if (pirState == HIGH){      
+      Serial.println("Motion ended!");      
+      pirState = LOW;
+    }
+  } 
+   }
+    
+   
+  if (photocellVal > Minlight && ledstate == 1) {
+    Serial.println("night is gone");
+    digitalWrite(LED, LOW);
+    ledstate = 0;
+  }  }
+  
