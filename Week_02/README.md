@@ -11,4 +11,4 @@
  And in this particular case, temperature became the criterion for winning a duel, because people with high body temperatures have a better chance of surviving.
 ## How to use
  The two duelers put their hands on the sensor, after the judge pressed the start switch, the colorful light of the side with higher temperature will lighted, which symbolized his victory.
- ![pic](https://raw.githubusercontent.com/msc-creative-computing/p-comp-week-1-labs-FengLinLi2010/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20211006192434.png)
+ ![pic](https://raw.githubusercontent.com/msc-creative-computing/p-comp-labs-FengLinLi2010/main/Week_02/1634125090(1).png)
