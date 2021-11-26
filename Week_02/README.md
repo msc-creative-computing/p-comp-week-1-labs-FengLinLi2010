@@ -2,7 +2,6 @@
 ## Background
  There is a hallway in my house, and every night when I go out of the study to my bedroom, it feels dark. So I wanted to make a lamp that would start working at night and light up automatically when someone walked by.
  The duels were also very varied. There are simple, casual rock-paper-scissors, and also pistols that would kill someone with the flick of the trigger.
- ![pic]()
 ## composition
  PIR sensor, an LED for testing whether it is running (when night comes), an LED for lighting
 ## How to use
