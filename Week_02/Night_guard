@@ -6,40 +6,52 @@ int PIR = 2;
 int pirState = LOW;
 int val = 0;
 int LIGHT = 12;
-void setup() {
+//天黑的时候，灯亮（13引脚），开启运动检测，如果有人，就开12号引脚的灯，没人就关掉。
+void setup()
+{
   Serial.begin(9600);
   pinMode(LED,OUTPUT);
   pinMode(LIGHT,OUTPUT);
   pinMode(PIR,INPUT);
 }
 
-void loop() {
+void loop(){
+	photocellVal = analogRead(A0);						//光敏电阻值获取
+  if (photocellVal < Minlight){		//光敏电阻值小于Minlight 并且 Led状态关闭
+		Serial.println("night is coming");  
+		digitalWrite(LED, HIGH);
+		if(ledstate == 0){
+			ledstate = 1;	
+		}
+		val = digitalRead(PIR); 						
+		if (val == 1) {            
+			digitalWrite(LIGHT, HIGH); 
+			if (pirState == LOW) {      
+				Serial.println("Motion detected!");      
+				pirState = HIGH;
+			}
   
-  photocellVal = analogRead(A0);
-   if (photocellVal < Minlight && ledstate == 0) {
-    Serial.println("night is coming");  
-    digitalWrite(LED, HIGH); 
-    ledstate = 1;
-      val = digitalRead(PIR); 
-  if (val == HIGH) {            
-    digitalWrite(LIGHT, HIGH); 
-    if (pirState == LOW) {      
-      Serial.println("Motion detected!");      
-      pirState = HIGH;
-    }
-  } else {
-    digitalWrite(LIGHT, LOW); 
-    if (pirState == HIGH){      
-      Serial.println("Motion ended!");      
-      pirState = LOW;
-    }
-  } 
-   }
+		} 
+		else {
+			digitalWrite(LIGHT, LOW); 
+			if (pirState == HIGH){      
+				Serial.println("Motion ended!");      
+				pirState = LOW;
+			}
+		} 
+	}
     
    
-  if (photocellVal > Minlight && ledstate == 1) {
-    Serial.println("night is gone");
-    digitalWrite(LED, LOW);
-    ledstate = 0;
-  }  }
+	if (photocellVal > Minlight)
+	{
+		Serial.println("night is gone");
+		digitalWrite(LED, LOW);
+		if(ledstate == 1)
+		{
+			ledstate = 0;	
+		}
+	}  
+ //Serial.println(digitalRead(PIR));
+ // Serial.println(photocellVal);
+}
   
