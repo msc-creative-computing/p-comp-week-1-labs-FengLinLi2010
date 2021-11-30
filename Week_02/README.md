@@ -9,7 +9,7 @@
  You don't have to do anything, and the Night Guard automatically kicks in as night falls. When someone stealthily passes in front of it, it lights up its lamp to illuminate the intruder.
  ![pic](https://raw.githubusercontent.com/msc-creative-computing/p-comp-labs-FengLinLi2010/main/Week_02/1634125090(1).png)
  [Tinkercad Link](https://www.tinkercad.com/embed/gDwkeGMcnxk?editbtn=1)
-##Code
+## Code
 ```
 int photocellVal = 0; 
 int Minlight = 400;
