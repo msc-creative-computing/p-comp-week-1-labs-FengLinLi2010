@@ -14,7 +14,7 @@
 ## How to use
  The two duelers put their hands on the sensor, after the judge pressed the start switch, the colorful light of the side with higher temperature will lighted, which symbolized his victory.
  ![pic](https://raw.githubusercontent.com/msc-creative-computing/p-comp-labs-FengLinLi2010/main/Week_01/circuit.png)
- [Tinkercad Links](https://www.tinkercad.com/embed/dGQwmclqQvp?editbtn=1)
+ [Tinkercad Link](https://www.tinkercad.com/things/dGQwmclqQvp)
  ## Code
 ```C++
   int Switchstate = 0;
