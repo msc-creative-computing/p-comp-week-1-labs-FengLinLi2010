@@ -15,8 +15,7 @@
  The two duelers put their hands on the sensor, after the judge pressed the start switch, the colorful light of the side with higher temperature will lighted, which symbolized his victory.
  ![pic](https://raw.githubusercontent.com/msc-creative-computing/p-comp-labs-FengLinLi2010/main/Week_01/circuit.png)
  ## Code
- ···
- // C++ code
+ ···C++
 //
 int Switchstate = 0;
 
@@ -94,10 +93,4 @@ void loop()
     }
   }  
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
+···
