@@ -5,10 +5,10 @@
 ## composition
  PIR sensor, an LED for testing whether it is running (when night comes), an LED for lighting
  ![pic](https://github.com/msc-creative-computing/p-comp-labs-FengLinLi2010/blob/main/Week_02/Sketch%20night%20%20light.jpg)
+ <img src="https://github.com/msc-creative-computing/p-comp-labs-FengLinLi2010/blob/main/Week_02/Sketch%20night%20%20light.jpg" style="transform:rotate(90deg);">
 ## How to use
  You don't have to do anything, and the Night Guard automatically kicks in as night falls. When someone stealthily passes in front of it, it lights up its lamp to illuminate the intruder.
  ![pic](https://raw.githubusercontent.com/msc-creative-computing/p-comp-labs-FengLinLi2010/main/Week_02/1634125090(1).png)
- .<img src="https://raw.githubusercontent.com/msc-creative-computing/p-comp-labs-FengLinLi2010/main/Week_02/1634125090(1).png" style="transform:rotate(90deg);>
  [Tinkercad Link](https://www.tinkercad.com/embed/gDwkeGMcnxk?editbtn=1)
 ##Code
 ```
