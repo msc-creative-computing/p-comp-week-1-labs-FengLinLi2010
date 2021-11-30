@@ -15,15 +15,14 @@
  The two duelers put their hands on the sensor, after the judge pressed the start switch, the colorful light of the side with higher temperature will lighted, which symbolized his victory.
  ![pic](https://raw.githubusercontent.com/msc-creative-computing/p-comp-labs-FengLinLi2010/main/Week_01/circuit.png)
  ## Code
- ···C++
-//
-int Switchstate = 0;
+```C++
+  int Switchstate = 0;
 
-int Temperature1 = 0;
+  int Temperature1 = 0;
 
-int Temperature2 = 0;
+  int Temperature2 = 0;
 
-void setup()
+  void setup()
 {
   Serial.begin(9600);
   
@@ -91,6 +90,6 @@ void loop()
       digitalWrite(11, LOW);
       digitalWrite(12, LOW);
     }
-  }  
-}
-···
+    }  
+    }
+
