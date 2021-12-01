@@ -1,5 +1,5 @@
 # Social Media Simulator
-![pic]()
+![pic](https://github.com/msc-creative-computing/p-comp-labs-FengLinLi2010/blob/main/Final_Project/pics_storage/fog.jpg)
 ## Background and main Idea
 ### Background research
 ### Inspiration from Cyborg manifesto
