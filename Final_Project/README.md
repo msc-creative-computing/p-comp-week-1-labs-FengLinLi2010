@@ -2,6 +2,7 @@
 ![pic](https://github.com/msc-creative-computing/p-comp-labs-FengLinLi2010/blob/main/Final_Project/pics_storage/fog.jpg)
 ## Background and main Idea
 ### Background research
+![pic](https://github.com/msc-creative-computing/p-comp-labs-FengLinLi2010/blob/main/Final_Project/pics_storage/95320b49fcede2d74fee4f727f71c3b.png)
 ### Inspiration from Cyborg manifesto
 "It is certainly true that postmodernist strategies, like my cyborg myth, subvert myriad organic wholes (for example, the poem, the primitive culture, the biological organism).
 -A Cyborg Manifesto"
