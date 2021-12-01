@@ -164,5 +164,29 @@ if(pirstate == HIGH){
 }
 ```
 # make appearence and solding circuit
+![pic](https://github.com/msc-creative-computing/p-comp-labs-FengLinLi2010/blob/main/Final_Project/test_vide%26pics/solding_making.png)
+* solding I used three circuit boards, one for Arduino control, one for a color sensor composed of photosensitive resistors fixed and connected, and one for 24V power supply
+* I used plastic sheets, glass jars, water pipes to make interactive interfaces, reaction vessels, wind box
+## final effect
+![pic](https://github.com/msc-creative-computing/p-comp-labs-FengLinLi2010/blob/main/Final_Project/pics_storage/fog.jpg)
+https://www.youtube.com/watch?v=4RZZQe3UeaM
+## weekly log
+# week6
+* Preliminary research on social media and public opinion
+* Research and study other excellent Arduino interactive works
+* Determine the theme of the work
+# week7
+* Conduct research on interactive media (fog, bubble, electronic screen) to find feasible technical route
+* Start testing the performance of the color sensor module and learn to use the code of the electronic screen (in test_code)
+# week8
+* Low power atomization test, high power atomization test, fan test, electromagnetic relay test and learning
+* Write code for oled screen
+* Design and test color sensors
+# week9
+* Write the final code
+* Test all circuits
+* soldering the circuit
+* make the appearance
+* paper work and video making
 
 
