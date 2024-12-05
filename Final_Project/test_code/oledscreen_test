@@ -1,0 +1,25 @@
+#include "U8glib.h"
+
+U8GLIB_SSD1306_128X32 u8g(U8G_I2C_OPT_NONE);
+
+void setup(void) {
+  u8g.setFont(u8g_font_8x13B);
+  u8g.setFontRefHeightText();
+  u8g.setFontPosTop();
+}
+
+void loop(void) {
+  int i;
+  for (i = 1000; i >=0; i--) {
+    u8g.firstPage();
+    do {
+      u8g.setColorIndex(1);
+      u8g.drawStr(0, 0, "Hello World!");
+      u8g.setPrintPos(0, 17);
+      u8g.print(i);
+      delay(300);
+      u8g.setColorIndex(0);
+    } while ( u8g.nextPage() );
+    
+  }
+}

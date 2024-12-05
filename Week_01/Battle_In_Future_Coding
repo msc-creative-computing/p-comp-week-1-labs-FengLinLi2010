@@ -1,0 +1,78 @@
+// C++ code
+//
+int Switchstate = 0;
+
+int Temperature1 = 0;
+
+int Temperature2 = 0;
+
+void setup()
+{
+  Serial.begin(9600);
+  
+  pinMode(2, INPUT);
+  pinMode(A0, INPUT);
+  pinMode(A1, INPUT);
+  pinMode(13, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+}
+
+void loop()
+{
+  Switchstate = digitalRead(2); 
+  Temperature1 = analogRead(A0); // temperature of player1
+  Temperature2 = analogRead(A1); //temperature of player2
+
+  digitalWrite(13, HIGH); // This is led for check is the circuit work
+  
+  if (Switchstate == HIGH) {
+    
+    Serial.print(Temperature1);
+    Serial.print(' ');
+    Serial.println(Temperature2);
+        if (Temperature1 > Temperature2) {
+      digitalWrite(3, HIGH);
+      delay(1000);
+      digitalWrite(4, HIGH);
+      delay(1000); 
+      digitalWrite(5, HIGH);
+      delay(1000); 
+      digitalWrite(6, HIGH);
+      delay(1000); 
+      digitalWrite(7, HIGH);
+      delay(1000); 
+      digitalWrite(3, LOW);
+      digitalWrite(4, LOW);
+      digitalWrite(5, LOW);
+      digitalWrite(6, LOW);
+      digitalWrite(7, LOW);
+    } 
+    else {
+      Serial.println(Temperature2);//Just check dose the else clause works
+      digitalWrite(8, HIGH);
+      delay(1000); 
+      digitalWrite(9, HIGH);
+      delay(1000); 
+      digitalWrite(10, HIGH);
+      delay(1000); 
+      digitalWrite(11, HIGH);
+      delay(1000); 
+      digitalWrite(12, HIGH);
+      delay(1000);
+      digitalWrite(8, LOW);
+      digitalWrite(9, LOW);
+      digitalWrite(10, LOW);
+      digitalWrite(11, LOW);
+      digitalWrite(12, LOW);
+    }
+  }  
+}
